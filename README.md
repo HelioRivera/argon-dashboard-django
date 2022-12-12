@@ -1,3 +1,12 @@
+## Proyecto de universidad con el fin de aprendizaje del stack ELK
+
+Hago uso de esta plantilla para proporcionar una interfaz gráfica a un proyecto de programación de [Elastic Search](https://www.elastic.co/). El propósito de dicha implementación es la de generar una aplicación con capacidad de monitoreo de estado de aplicaciones web que son servidas por nginx. 
+
+Las inserciones principales de código en la plantilla Django se encuentran en apps\home\views.py y en apps\templates\home\index.html.
+Se proporciona un informe (./informe/informe _elastic_search.pdf) de los procedimientos llevados a cabo para el levantamiento del stack.
+Las consultas realizadas al indice fueron hechas en el lenguaje de dominio especifico de elastic search [Query DSL.](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)
+
+
 # [Argon Dashboard Django](https://www.creative-tim.com/product/argon-dashboard-django) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Dashboard,%20a%20free%20Material%20Bootstrap%204%20Admin%20Template%20%E2%9D%A4%EF%B8%8F%20https%3A//bit.ly/2Lyat1Y%20%23bootstrap%20%23material%20%23design%20%23developers%20%23freebie%20%20via%20%40CreativeTim)
 
  ![version](https://img.shields.io/badge/version-1.0.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-django.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-django/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-django.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-django/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
