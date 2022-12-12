@@ -3,7 +3,7 @@
     <!-- Brand -->
     <div class="sidenav-header  align-items-center">
       <a class="navbar-brand" href="/">
-        <img src="/static/assets/img/brand/blue.png" class="navbar-brand-img" alt="Argon Design - Jinja Template Logo.">
+        {% comment %} <img src="/static/assets/img/brand/blue.png" class="navbar-brand-img" alt="Argon Design - Jinja Template Logo."> {% endcomment %}
       </a>
     </div>
     <div class="navbar-inner">
@@ -14,19 +14,31 @@
           <li class="nav-item">
             <a class="nav-link {% if 'index' in segment %} active {% endif %}" href="/">
               <i class="ni ni-tv-2 text-primary"></i>
-              <span class="nav-link-text">Dashboard</span>
+              <span class="nav-link-text">InfoWeb Panel</span>
             </a>
           </li>
-          <li class="nav-item">
+          {% comment %} <li class="nav-item">
             <a class="nav-link {% if 'icons' in segment %} active {% endif %}" href="/icons.html">
               <i class="ni ni-planet text-orange"></i>
               <span class="nav-link-text">Icons</span>
             </a>
-          </li>
-          <li class="nav-item">
+          </li> {% endcomment %}
+          {% comment %} <li class="nav-item">
             <a class="nav-link {% if 'map' in segment %} active {% endif %}" href="/map.html">
               <i class="ni ni-pin-3 text-primary"></i>
               <span class="nav-link-text">Google</span>
+            </a>
+          </li> {% endcomment %}
+          <li class="nav-item">
+            <a class="nav-link {% if 'tables' in segment %} active {% endif %}" href="/tables.html">
+              <i class="ni ni-bullet-list-67 text-default"></i>
+              <span class="nav-link-text">Monitoreo webapp</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'tables' in segment %} active {% endif %}" href="/agregawebapp.html">
+              <i class="ni ni-bullet-list-67 text-default"></i>
+              <span class="nav-link-text">Agregar webapp</span>
             </a>
           </li>
           <li class="nav-item">
@@ -36,22 +48,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if 'tables' in segment %} active {% endif %}" href="/tables.html">
-              <i class="ni ni-bullet-list-67 text-default"></i>
-              <span class="nav-link-text">Tables</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/login.html">
+            {% comment %} <a class="nav-link" href="/login.html">
               <i class="ni ni-key-25 text-info"></i>
               <span class="nav-link-text">Login (template)</span>
-            </a>
+            </a> {% endcomment %}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register.html">
+            {% comment %} <a class="nav-link" href="/register.html">
               <i class="ni ni-circle-08 text-pink"></i>
               <span class="nav-link-text">Register (template)</span>
-            </a>
+            </a> {% endcomment %}
           </li>
 
           <li class="nav-item">
@@ -59,7 +65,9 @@
               <i class="ni ni-user-run text-red"></i>
               <span class="nav-link-text">Logout</span>
             </a>
-          </li>            
+          </li> 
+
+                         
         </ul>
         <!-- Divider -->
         <hr class="my-3">
@@ -71,30 +79,30 @@
         <ul class="navbar-nav mb-md-3">
 
           <li class="nav-item">
-            <a class="nav-link" 
+            {% comment %} <a class="nav-link" 
                target="_blank" 
                href="https://appseed.us/admin-dashboards/django-dashboard-argon">
               <i class="ni ni-archive-2"></i>
               <span class="nav-link-text">Product Page</span>
-            </a>
+            </a> {% endcomment %}
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" 
+            {% comment %} <a class="nav-link" 
                target="_blank" 
                href="https://appseed.us/admin-dashboards/django-dashboard-argon-pro">
               <i class="ni ni-spaceship text-red"></i>
               <span class="nav-link-text text-red">PRO Version</span>
-            </a>
+            </a> {% endcomment %}
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active active-pro" 
+            {% comment %} <a class="nav-link active active-pro" 
                target="_blank" 
                href="http://appseed.us">
               <i class="ni ni-send text-dark"></i>
               <span class="nav-link-text">AppSeed</span>
-            </a>
+            </a> {% endcomment %}
           </li>
         </ul>
       </div>

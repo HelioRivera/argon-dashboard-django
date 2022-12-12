@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Servidor de mipagina.cl {% endblock title %}
+
+{% block content %}
+    {% comment %} <p>Para poder monitorear sus aplicaciones web, dede intalar un agente en su servidor:</p>
+    <p>selecione su sistema operativo:</p> {% endcomment %}
+    <div class="card">
+        <h5 class="card-header">Agente para servidor web</h5>
+        <div class="card-body">
+          <h5 class="card-title">Instalacion de agente</h5>
+          <p class="card-text">Para monitorear su sitio web, Copie y ejecute las siguientes lineas de codigo en la terminal de su maquina.</p>
+          {% comment %} <p class = "card-text">curl -sSL https://mipagina.cl/agent.sh | sudo bash</p> {% endcomment %}
+          <p class="card-text">curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.5.2-amd64.deb
+            sudo dpkg -i elastic-agent-8.5.2-amd64.deb<br>
+            sudo elastic-agent enroll --url=https://64a19cde644043318a67f52d6b33f805.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=a1Rsd3I0UUJVVmVfLTY1a0g5MXI6emcwQXdpeEhTcWlaY19YTFljbjVqZw== <br>
+            sudo systemctl enable elastic-agent <br>
+            sudo systemctl start elastic-agent <br></p>
+          <a href="#" class="btn btn-primary">copiar</a>
+        </div>
+    </div>
+{% endblock content %}
+
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
